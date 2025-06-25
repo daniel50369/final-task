@@ -3,56 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <title>מערכת 1 – ניתוח קמפיינים</title>
-  <script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
   <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      overflow: hidden;
-      font-family: Arial, sans-serif;
-    }
+    html, body { margin:0; padding:0; height:100%; overflow:hidden; }
     header {
-      height: 60px;
-      background: linear-gradient(135deg, #ff416c, #ff4b2b);
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.3em;
+      height:60px;
+      background:linear-gradient(135deg,#ff416c,#ff4b2b);
+      display:flex;align-items:center;justify-content:center;
+      color:#fff;font-size:1.3em;
     }
-    #vizContainer {
-      position: absolute;
-      top: 60px;
-      bottom: 0;
-      left: 0;
-      right: 0;
-    }
-    /* וידוא שה-object תופס 100% רוחב וגובה */
-    #vizContainer object {
-      width: 100% !important;
-      height: 100% !important;
-      display: block !important;
-    }
+    #viz { position:absolute;top:60px;left:0;right:0;bottom:0; }
+    #viz iframe { width:100%; height:100%; border:0; }
   </style>
 </head>
 <body>
-
   <header>מערכת 1 – ניתוח קמפיינים</header>
-
-  <div id="vizContainer" class="tableauPlaceholder">
-    <object class="tableauViz">
-      <param name="host_url"             value="https%3A%2F%2Fpublic.tableau.com%2F"/>
-      <param name="embed_code_version"   value="3"/>
-      <param name="site_root"            value=""/>
-      <param name="name"                 value="dashbord1_17508439481650/Dashboard1"/>
-      <param name="tabs"                 value="no"/>
-      <param name="toolbar"              value="yes"/>
-      <param name="device"               value="desktop"/>
-      <param name="language"             value="he-IL"/>
-    </object>
+  <div id="viz">
+    <iframe
+      src="https://public.tableau.com/views/dashbord1_17508439481650/Dashboard1?:embed=y&:showVizHome=no&:toolbar=yes"
+      allowfullscreen>
+    </iframe>
   </div>
-
-  <script type="text/javascript" src="https://public.tableau.com/javascripts/api/viz_v1.js"></script>
 </body>
 </html>
