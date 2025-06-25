@@ -1,48 +1,56 @@
-<!-- dash3.html -->
 <!DOCTYPE html>
 <html lang="he">
 <head>
   <meta charset="UTF-8">
   <title>מערכת 3 – תפוקת עובדים ושביעות רצון</title>
+  <script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
   <style>
-    html, body { margin:0; padding:0; height:100%; overflow:hidden; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
     header {
-      position: absolute;
-      top: 0; left: 0; width: 100%;
       height: 60px;
-      background: linear-gradient(135deg,#8360c3,#2ebf91);
+      background: linear-gradient(135deg, #8360c3, #2ebf91);
       color: white;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      font-size:1.3em;
-      z-index:10;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3em;
     }
     #vizContainer {
-      position:absolute;
-      top:60px; bottom:0; left:0; right:0;
+      position: absolute;
+      top: 60px;
+      bottom: 0;
+      left: 0;
+      right: 0;
     }
   </style>
 </head>
 <body>
+
   <header>מערכת 3 – תפוקת עובדים ושביעות רצון</header>
-  <div id="vizContainer" class="tableauPlaceholder" style="position: relative;">
+  <div id="vizContainer" class="tableauPlaceholder">
     <object class="tableauViz" width="100%" height="100%" style="display:none;">
-      <param name="host_url"             value="https%3A%2F%2Fpublic.tableau.com%2F" />
-      <param name="embed_code_version"   value="3" />
-      <param name="site_root"            value="" />
-      <param name="name"                 value="dashbord3_17508441448170/Dashboard3" />
-      <param name="tabs"                 value="no" />
-      <param name="toolbar"              value="yes" />
-      <param name="animate_transition"   value="yes" />
-      <param name="display_static_image" value="no" />
-      <param name="display_spinner"      value="yes" />
-      <param name="display_overlay"      value="yes" />
-      <param name="display_count"        value="no" />
-      <param name="language"             value="he-IL" />
-      <param name="device"               value="desktop" />
+      <param name="host_url"             value="https%3A%2F%2Fpublic.tableau.com%2F"/>
+      <param name="embed_code_version"   value="3"/>
+      <param name="site_root"            value=""/>
+      <param name="name"                 value="dashbord3_17508441448170/Dashboard3"/>
+      <param name="tabs"                 value="no"/>
+      <param name="toolbar"              value="yes"/>
+      <param name="animate_transition"   value="yes"/>
+      <param name="display_static_image" value="no"/>
+      <param name="display_spinner"      value="yes"/>
+      <param name="display_overlay"      value="yes"/>
+      <param name="display_count"        value="no"/>
+      <param name="language"             value="he-IL"/>
+      <param name="device"               value="desktop"/>
     </object>
   </div>
-  <script src="https://public.tableau.com/javascripts/api/viz_v1.js"></script>
+
+  <script type="text/javascript" src="https://public.tableau.com/javascripts/api/viz_v1.js"></script>
 </body>
 </html>
