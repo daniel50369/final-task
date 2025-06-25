@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>מערכת 3 – תפוקת עובדים ושביעות רצון</title>
+  <!-- API של Tableau -->
   <script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
   <style>
+    /* אפס שוליים, תופס 100% גובה המסך */
     html, body {
       margin: 0;
       padding: 0;
@@ -12,6 +14,7 @@
       overflow: hidden;
       font-family: Arial, sans-serif;
     }
+    /* ה־header בגובה קבוע של 60px */
     header {
       height: 60px;
       background: linear-gradient(135deg, #8360c3, #2ebf91);
@@ -21,6 +24,7 @@
       justify-content: center;
       font-size: 1.3em;
     }
+    /* תיבת ה־viz תופסת את כל החלל מתחת לכותרת */
     #vizContainer {
       position: absolute;
       top: 60px;
@@ -28,32 +32,31 @@
       left: 0;
       right: 0;
     }
-    /* מוודאים שה-object ייתפס בדיוק לגודל הדיב */
-    #vizContainer object {
-      width: 100% !important;
-      height: 100% !important;
-      display: block !important;
-    }
   </style>
 </head>
 <body>
 
   <header>מערכת 3 – תפוקת עובדים ושביעות רצון</header>
+
   <div id="vizContainer" class="tableauPlaceholder">
-    <object class="tableauViz">
+    <object class="tableauViz" width="100%" height="100%" style="display:none;">
       <param name="host_url"             value="https%3A%2F%2Fpublic.tableau.com%2F"/>
       <param name="embed_code_version"   value="3"/>
       <param name="site_root"            value=""/>
       <param name="name"                 value="dashbord3_17508441448170/Dashboard3"/>
       <param name="tabs"                 value="no"/>
       <param name="toolbar"              value="yes"/>
-      <param name="width"                value="100%"/>
-      <param name="height"               value="100%"/>
-      <param name="device"               value="desktop"/>
+      <param name="animate_transition"   value="yes"/>
+      <param name="display_static_image" value="no"/>
+      <param name="display_spinner"      value="yes"/>
+      <param name="display_overlay"      value="yes"/>
+      <param name="display_count"        value="no"/>
       <param name="language"             value="he-IL"/>
+      <param name="device"               value="desktop"/>
     </object>
   </div>
 
+  <!-- הטעינה הסופית של הספרייה -->
   <script type="text/javascript" src="https://public.tableau.com/javascripts/api/viz_v1.js"></script>
 </body>
 </html>
